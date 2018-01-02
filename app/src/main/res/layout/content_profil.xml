@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kaya.billtech.ProfilActivity"
+    tools:showIn="@layout/app_bar_profil">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginTop="18dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/default_profile"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.612"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:srcCompat="@drawable/round_add_button"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="59dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="384dp"
+            android:layout_marginTop="120dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="127dp">
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="20dp"
+                android:background="#0000"
+                android:drawableRight="@drawable/user"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/place_autocomplete_prediction_primary_text_highlight"
+                android:textColorLink="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#E24C04" />
+
+            <EditText
+                android:id="@+id/user_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:drawableRight="@drawable/user"
+                android:hint="Surname"
+                android:inputType="text"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/place_autocomplete_prediction_primary_text_highlight"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#E24C04" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:drawableRight="@drawable/ic_phone_black_24dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/place_autocomplete_prediction_primary_text_highlight" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#E24C04" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:drawableRight="@drawable/ic_home_black_24dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:maxLength="100"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/place_autocomplete_prediction_primary_text_highlight" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#E24C04" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Premium"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#E24C04" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/controls"
+            style="@android:style/ButtonBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_delete"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background_delete"
+                android:text="DELETE ACCOUNT" />
+
+            <Button
+                android:id="@+id/bt_update"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background_update"
+                android:text="UPDATE" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

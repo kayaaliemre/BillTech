@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/controls"
+        style="@android:style/ButtonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_accepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="accepted" />
+
+        <Button
+            android:id="@+id/bt_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Close" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/controls"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="BillTech Mobil Android Uygulaması Gizlilik Politikası
+İşbu Gizlilik Politikası, BillTech mobil uygulamasına erişim sağlayacak kişilerin (kullanıcıların) mobil uygulamayı cihazlarına yüklemesi ile birlikte yürürlüğe girmiş olacaktır. İşbu Gizlilik Politikası BillTech mobil uygulama kapsamındaki hizmetlerden kullanıcıları yararlandırmak amacıyla kullanıcılara ait bilgilerin; toplanması, kullanılması ve işlenmesine ilişkin hükümleri içermektedir. BillTech işbu Gizlilik Politikası hükümlerini, dilediği zaman mobil uygulamasında yayınlamak suretiyle, tek taraflı olarak değiştirebilir. BillTech mobil uygulaması üzerinde değişiklik yapılan Gizlilik Politikası hükümleri, iş bu mobil uygulamada yayınlandığı tarihte yürürlüğe girer. Kullanıcıların mobil uygulamadan ayrılmak istemesi durumunda, uygulamayı kaldırması yeterli olacaktır.
+1. Yer ve Cihaz Bilgisi'ne Erişilmesi
+Kullanıcılar mobil uygulamayı yükleyerek giriş yaptıklarında cihaz bilgileri (cihazın ekranının açık olup olmama, GPS ayarının durumuna dair bilgiler), kişi bilgileri ve gerçek zamanlı olarak yer bilgileri kontrol edilerek bulundukları yer bilgilerine ulaşılabilecektir. Mobil uygulama kapsamında edinilecek yer bilgileri sunucularda kayıt altına alınmayacak olup, kullanıcıların kendi istekleri doğrultusunda mobil uygulama harita ara yüzünde konumlarını takip edebilmelerine olanak verilmiştir. BillTech mobil uygulaması olarak kullanıcıların konumunu görme durumu vardır. Cihaz bilgileri, kullanıcının uygulama içerisinde kendi konumunu görmek istemesi halinde GPS özelliğinin açılmasını sağlamak, uygulama aktif olduğu süre boyunca telefonun bekleme durumuna girmemesini sağlama (ekran ışığının açık kalması) için alınır, BillTech mobil uygulamasına ait hiçbir sunucuda tutulmayacak olup, cihaz içerisinde kayıt altına alınacaktır. Kişi bilgileri, kullanıcının isteği halinde uygulama içerisinde sunulmuş olan telefon numaralarına arama yapabilmek, mail adreslerine mail atabilmek için alınır, BillTech mobil uygulamasına ait hiçbir sunucuda tutulmayacak olup, cihaz içerisinde kayıt altına alınacaktır.
+İşbu gizlilik sözleşmesince kayıt altına alınan verilerin üçüncü taraflar ile paylaşılmayacaktır.
+2. Kullanıcı İzinleri
+Uygulamanın özelliklerinin cihaz ile uyumlu çalışabilmesi için kullanıcı tarafından onaylanması gereken ve onaylanmadan alınmış izinlerdir.
+2.1 Kimlik İzni
+Bu izin kullanıcının cihazında kurulu olan mail ve mac adreslerini almak için istenir.
+2.2 Konum İzni
+Bu izin Kullanıcının cihazının konumunu almak için istenir.
+2.3 Telefon İzni
+Bu izin Kullanıcının cihazının durumunu almak için istenir.
+2.4 Depolama İzni
+Bu izin cihazın belleğinde uygulama içerisinde kullanılan ikonların ve uygulamaya ait veri tabanının saklanmasına olanak verir.
+3. Marka ve Telif Hakkı
+BillTech mobil uygulaması adına kayıtlı marka ve eserlerin (mobil uygulamanın; tasarım, metin, imge ve diğer kodlar da dahil ve fakat bunlarla sınırlı olmamak kaydıyla tüm elemanlarının) izinsiz kullanılması, çoğaltılması, kopyalanması, depo edilmesi ve kanuna aykırı diğer bütün haller, 556 sayılı Markaların Korunması Hakkında Kanun Hükmünde Kararname, 5846 sayılı Fikir ve Sanat Eserleri Kanunu ve diğer ilgili mevzuat uyarınca Kullanıcının sorumluluğuna yol açar. Kullanıcılar, işbu Gizlilik Politikasını kabul etmekle BillTech logosunun kullanımına ilişkin kurallara uygun davranacaklarını kabul, beyan ve taahhüt ederler. Kullanıcıların işbu madde hükmüne aykırı davranması durumunda, BillTech mobil uygulaması bu durumun düzeltilmesini kullanıcıdan talep edebileceği gibi dilerse kullanıcıya önceden haber vermeksizin kullanıcının üyeliğini geçici veya kalıcı olarak iptal edebilir ve yasal yollara başvurabilir.
+5. Hizmet ve Gizlilik Koşulları
+BillTech mobil uygulamada yer alacak ürün ve hizmetlerle ilgili olarak fiyat, promosyon, kampanya ve diğer bilgilerin güncelliği ile ilgili garanti vermemektedir. İşbu mobil uygulamada yer alacak, fiyat, ürün, kampanya ve promosyon bilgileri; kişiye, yere ve firmaya göre farklılıklar gösterebileceği gibi BillTech mobil uygulamada yer alan bilgilerde önceden bir bildirim yapmaksızın değişiklik yapma hakkına haizdir.
+" />
+
+
+    </ScrollView>
+
+</RelativeLayout>
