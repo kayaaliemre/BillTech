@@ -20,7 +20,7 @@ public class ConnectionClass {
         String ConnURL = null;
         try {
             Class.forName(classs);
-            String connString = "jdbc:jtds:sqlserver://10.27.73.176:1433/BillTech;encrypt=false;user=billtech;password=billtech;instance=SQLEXPRESS;";
+            String connString = "jdbc:jtds:sqlserver://*******/BillTech;encrypt=false;user=*******;password=*****;instance=SQLEXPRESS;";
             connection = DriverManager.getConnection(connString, "billtech", "billtech");
         } catch (SQLException se) {
             Log.e("ERROR Sql", se.getMessage());
